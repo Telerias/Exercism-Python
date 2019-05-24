@@ -1,7 +1,5 @@
-def two_fer(name):
-	tname = 'you'
-	tname = name
-	output = 'One for ' + tname + ', one for me.'
+def two_fer(name='you'):
+	output = 'One for ' + name + ', one for me.'
 	print(output)
 	return output
 	
