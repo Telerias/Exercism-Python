@@ -1,2 +1,6 @@
+import datetime
+
 def add_gigasecond(moment):
-    pass
+    return moment + datetime.timedelta(seconds = 10**9)
+
+    
