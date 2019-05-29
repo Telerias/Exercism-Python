@@ -1,25 +1,11 @@
-'''
-Use list to hold scores
-list.pop() - removes and returns last item in list - note that it removes! templist = list does not copy, only pointer!
-
-
-
-
-
-
-
-'''
-
 def latest(scores):
-    tempscore = scores  # doesn't copy, still removes last added
-    last_added = tempscore.pop() # get the last added score
-    return last_added
-
+    return scores[-1]
 
 
 def personal_best(scores):
-    pass
+    return max(scores)
 
 
 def personal_top_three(scores):
-    pass
+    return sorted(scores, reverse=True)[:3]
+
